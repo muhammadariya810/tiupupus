@@ -1,0 +1,226 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+ 
+}  
+.layar-penuh{
+  width: 100%; 
+}
+
+
+/*
+.background img{
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   z-index: -2;
+}
+.background .overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgb(18, 40, 43);
+   opacity: 60%;
+   z-index: 200;
+}
+.background .intro{
+  position: relative;
+  z-index: 300;
+  top: 60%;
+  text-align: center;
+  color: #ffffff;
+}
+  */
+  .intro h3{
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+  }
+  .bungkusgambar{
+    position: absolute;
+  
+  }
+  .gambar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ .gambar img{
+   width: 320px;
+   height: 320px;
+   object-fit: cover;
+   margin: 10px;
+  }
+
+.sosmed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sosmed a img{
+  width: 40px;
+  height: 40px;
+  
+}
+.intrososmed{
+  text-align: center;
+}
+.keterangan{
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+.keterangan h3{
+  font-size: 20px;
+}
+
+
+footer{
+  padding: 50px 0px 50px 0px;
+  background-color: #34403e;
+  color: #fff;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.col{
+  flex: 1;
+  text-align: left;
+}
+.col p{
+  padding-right: 20px;
+}
+.ikontext{
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+.ikon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+footer .kontak{
+  color: rgb(255, 25, 25);
+  font-weight: bold;
+ }
+footer h5{
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer  img{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+ }
+ footer  a .text{
+  position: relative;
+  top: -10px;
+ }
+ footer a .text:hover{
+  text-decoration: underline;
+ }
+ footer a{
+  text-decoration: none;
+  color: #fff;
+ }
+ .sitemap ul{
+  max-height: 100px;
+  overflow-x: hidden;
+  width: 80px;
+  position: relative;
+  right: 20px;
+}
+.sitemap a:hover{
+  font-size: 16px;
+}
+.sitemap a:active{
+  color: rgb(213, 213, 213);
+}
+footer .layar-dalam .copyright{
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #666;
+  text-align: center;
+}
+
+@media screen and (max-width: 991.98px) {
+  .layar-dalam{
+  width: 90%;
+  }
+  /*
+  .background img{
+    width: 100%;
+    object-fit: cover;
+  }
+    */
+    .gambar img{
+      width: 130px;
+      height: 130px;
+     }
+  footer{
+    padding: 20px;
+    padding-left: 10px;
+   }
+   .row{
+    display: block;
+    justify-content: space-between;
+    
+   }
+   .col {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+   }
+   .sitemap{
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    padding-top: 30px;
+   }
+   .col a{
+   position: relative;
+   top: -20px;
+   }
+   .col p{
+    position: relative;
+    top: -20px;
+   }
+   .ikontext{
+    position: relative;
+    top: -16px;
+   }
+   .keterangan iframe{
+    width: 425px;
+    height: 225px;
+   }
+}

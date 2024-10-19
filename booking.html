@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-booking.css">
+</head>
+<body>
+    <nav class="tempatlogo">
+        <div class="layar"></div>
+            <div class="logo">
+                <a href=""><img src="Logo tiu pupus hitam.png" class="hitam" alt=""> </a>
+            </div>
+            <a href="index.html" class="tombolhome">Home</a>
+           
+    </nav>
+    <nav>
+        <div class="background">
+        <div class="overlay"></div>
+        <img src="Tiupupus.png" alt="">
+        </div>
+
+    <div class="form-box">
+        <div class="box">
+            <div class="keterangan">
+               
+               
+                    <form action="">
+                        <h2>Form Pemesanan Tiket Wisata Air Terjun Tiu Pupus</h2>
+                        <label for="nama">Nama :</label>
+                        <div class="garis"></div>
+                        <input type="text" id="nama" name="nama" required>
+                        <br>
+                        <label for="no_hp">Nomor Telepon:</label>
+                        <input type="tel" id="no_hp" name="no_hp" required>
+                        <br>
+                        <label for="email">Alamat Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="jumlah_tiket">Jumlah Tiket:</label>
+                        <input type="number" id="jumlah_tiket" name="jumlah_tiket" required>
+                        <br>
+                        <label for="tanggal_kunjungan">Tanggal Kunjungan:</label>
+                        <input type="date" id="tanggal_kunjungan" name="tanggal_kunjungan" required>
+                        <br>
+                        <button type="button" onclick="pesanWhatsApp()" id="btnKirim" class="tombol">Pesan Sekarang</button>
+                    </form>
+               
+            </div>
+        </div>
+    </div>
+</nav>
+<footer id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h5>Follow Us</h5>
+                <a href="https://www.facebook.com/profile.php?id=100011316825533"> <img src="fb 1.png" alt=""><span class="text">Facebook</span></a>
+                <br>
+                <a href="https://www.instagram.com/airterjuntiupupus_23?igsh=Ym14ZDkwYW1jNHY1"> <img src="ig 1.png" alt=""><span class="text">Instagram</span></a>
+            </div>
+            <div class="col">
+                <h5>Contact</h5>
+                <a href="kontak.html" class="kontak">Hubungi Kami</a>
+            </div>
+            <div class="col">
+                <h5>Office</h5>
+                <p>Jln. Genggelang, Kec. Gangga, Kabupaten Lombok Utara, Nusa Tenggara Barat. 83353</p>
+                <div class="ikontext">
+                    <img src="wa 1.png" class="ikon" alt="">
+                    +6285253810632
+                </div>
+                <div class="ikontext">
+                    <img src="lokasi.png" class="ikon" alt="">
+                    Desa Segarakaton, NTB
+                </div>
+            </div>
+            <div class="sitemap">
+                <h5>Sitemap</h5>
+            
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#aboutus">About</a></li>
+                        <li><a href="index.html#support">Support</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="booking.html#booking">Booking</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="layar-dalam">
+        <div class="copyright">&copy; 2024 Tiu Pupus Lombok</div>
+    </div>
+</footer>
+    <script>
+        function pesanWhatsApp(){
+            var nama = document.getElementById("nama").value;
+            var telepon = document.getElementById("no_hp").value;
+            var email = document.getElementById("email").value;
+            var jumlahTiket = document.getElementById("jumlah_tiket").value;
+            var tanggalKunjungan = document.getElementById("tanggal_kunjungan").value;
+
+            if(!nama || !telepon || !email || !jumlahTiket || !tanggalKunjungan){
+                alert("Semua kolom harus diisi");
+                document.getElementById("btnKirim").disabled = false;
+                return false;
+            }else{
+                document.getElementById("btnKirim").disabled = true;
+            }
+            
+            var pesan = "Hallo, saya ingin memesan tiket wisata. \nNama: " + nama + "\nNomor Telepon: " + telepon + "\nEmail: " + email + "\nJumlah Tiket: " + jumlahTiket + "\nTanggal Kunjungan: " + tanggalKunjungan;
+            var url = "https://api.whatsapp.com/send?phone=6285337630975&text=" + encodeURIComponent(pesan);
+            window.open(url, '_blank');
+        }
+    </script>
+
+
+</body>
+</html>

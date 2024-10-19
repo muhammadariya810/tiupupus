@@ -1,0 +1,257 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+ 
+}  
+.layar-penuh{
+  width: 100%; 
+}
+.tempatlogo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  padding: 5px;
+  right: 0px;
+}
+.logo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.logo img{
+  width: 120px;
+  height: auto;
+}
+.tombolhome{
+  background-color: #e5e5e5;
+  height: 30px;
+  line-height: 30px;
+  color: inherit;
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  float: right;
+}
+.background{
+    position: relative;
+    /*margin-top: -10%;*/
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+#google_element{
+  position: absolute;
+  float: right;
+  padding-top: -100px;
+  top: -70px;
+  right: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  
+}
+.background img{
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   z-index: -2;
+}
+.background .overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgb(18, 40, 43);
+   opacity: 60%;
+   z-index: 200;
+}
+.background .intro{
+  position: relative;
+  z-index: 201;
+  top: 60%;
+  text-align: center;
+  color: #ffffff;
+}
+.intro h3{
+  font-size: 30px;
+  line-height: 1;
+}
+.sosmed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sosmed a{
+  position: relative;
+  z-index: 201;
+  top: 350px;
+  margin: 14px;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%;
+}
+.sosmed a img{
+  width: 40px;
+  height: 40px;
+  left: -10px;
+}
+.keterangan{
+  text-align: justify;
+  
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+.keterangan h3{
+  font-size: 20px;
+}
+
+
+footer{
+  padding: 50px 0px 50px 0px;
+  background-color: #34403e;
+  color: #fff;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.col{
+  flex: 1;
+  text-align: left;
+}
+.col p{
+  padding-right: 20px;
+}
+.ikontext{
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+.ikon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+footer .kontak{
+  color: rgb(255, 25, 25);
+  font-weight: bold;
+ }
+footer h5{
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer  img{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+ }
+ footer  a .text{
+  position: relative;
+  top: -10px;
+ }
+ footer a .text:hover{
+  text-decoration: underline;
+ }
+ footer a{
+  text-decoration: none;
+  color: #fff;
+ }
+ .sitemap ul{
+  max-height: 100px;
+  overflow-x: hidden;
+  width: 80px;
+  position: relative;
+  right: 20px;
+}
+.sitemap a:hover{
+  font-size: 16px;
+}
+.sitemap a:active{
+  color: rgb(213, 213, 213);
+}
+footer .layar-dalam .copyright{
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #666;
+  text-align: center;
+}
+
+@media screen and (max-width: 991.98px) {
+  .layar-dalam{
+  width: 90%;
+  }
+ .background .intro{
+  top: 55%;
+ }
+ .sosmed a{
+  top: 320px;
+  
+ }
+  footer{
+    padding: 20px;
+    padding-left: 10px;
+   }
+   .row{
+    display: block;
+    justify-content: space-between;
+    
+   }
+   .col {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+   }
+   .sitemap{
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    padding-top: 30px;
+   }
+   .col a{
+   position: relative;
+   top: -20px;
+   }
+   .col p{
+    position: relative;
+    top: -20px;
+   }
+   .ikontext{
+    position: relative;
+    top: -16px;
+   }
+   .keterangan iframe{
+    width: 425px;
+    height: 225px;
+   }
+}

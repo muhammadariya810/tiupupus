@@ -1,0 +1,657 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}  
+.layar-penuh{
+    width: 100%; 
+}
+#google_element{
+   position: absolute;
+   float: right;
+   
+   top: -185px;
+   right: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+   
+}
+nav{
+    z-index: 100;
+    color: rgb(59, 202, 228);
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #ffffff;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+ 
+ nav .logo{
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+ }
+ nav .logo img{
+    vertical-align: middle;
+    width: 120px;
+ }
+ nav .menu{
+    float: right;
+    height: 60px;
+    max-width: 700px;
+    
+ }
+ nav .menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+ }
+ nav .menu ul li{
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+ }
+ 
+ nav ul li a{
+    color: rgb(254, 254, 254);
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+ }
+ nav ul li a:hover{
+     text-decoration: underline; 
+ }
+ 
+ header{
+    position: relative;
+    /*margin-top: -10%;*/
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+ }
+ header img{
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   z-index: -2;
+ }
+ header .intro{
+   z-index: 100;
+   color: #ffffff;
+   text-align: center;
+   position: relative;
+   /*top: 50%;*/
+   top: 40%;
+ }
+ header .intro h3{
+   font-size: 40px;
+   margin: 0;
+   padding: 0;
+ }
+ .tombol{
+   background-color: #d605cb;
+   height: 40px;
+   line-height: 42px;
+   color: inherit;
+   text-decoration: none;
+   display: inline-block;
+   padding: 0px 20px 0px 20px;
+   font-size: 15px;
+   border-radius: 5px;
+   margin-top: 2%;
+   
+ }
+
+ header .overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgb(0, 0, 0);
+   opacity: 60%;
+   z-index: -1;
+ }
+ .tombol-menu{
+   position: absolute;
+   top: 1.7rem;
+   right: 1rem;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 30px;
+   height: 20px;
+ }
+ .tombol-menu .garis{
+   height: 3px;
+   background-color: #fff;
+ }
+ section{
+   padding: 50px 0px 50px 0px;
+ } 
+ section h3{
+  font-size: 30px;
+ }
+ section .konten-isi p{
+  text-align: justify;
+ }
+ section h3::after{
+   content: "";
+   border-bottom: 5px solid #d605b3;
+   width: 52px;
+   display: block;
+   margin: 20px auto;
+   border-radius: 10px;
+ }
+ #aboutus, #team, #blog, #gallery, #support {
+   text-align: center;
+ }
+ section p.ringkasan{
+   font-style: italic;
+   font-size: 18px;
+   color: rgb(166, 166, 166);
+ }
+ section .konten-isi p{
+   font-style: "italic";
+ }
+ nav.putih{
+  background-color: rgb(255, 255, 255);
+}
+ nav.putih .tombol-menu .garis{
+    background-color: #333;
+ }
+ nav.putih ul li a{
+  color: #333;
+ }
+ nav .logo img.hitam{
+    display: none;
+ }
+ img .uin{
+  width: 10px;
+ }
+ section.abuabu{
+  background-color: #f6f6f6;
+ }
+.support, .tim, .blog{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.support h6, .tim h6{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.support img{
+  position: relative;
+  width: 90px;
+  margin-top: 90px;
+  
+}
+.support div, .tim div{
+  position: relative;
+  text-align: center;
+  width: 26%;
+  margin-top: 30px;
+}
+.support .uin img{
+  width: 128px;
+}
+.support h3{
+ position: absolute;
+ margin-top: 20px;
+}
+ .gallerytiu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallerytiu img{
+  z-index: 50;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gallerytiu img:hover{
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+.lightbox{
+  display: none;
+  position: fixed;
+  z-index: 150;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.lightbox img{
+  margin: auto;
+  display: block;
+  width: auto;
+  max-height: 100%;
+}
+.close{
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+
+/*style untuk video*/
+ .batasvideo{
+  border-bottom: 3px solid #000000;
+  line-height: 1px;
+  margin: 50px;
+  width: 80%;
+  position: relative;
+  top: -100px;
+  z-index: 100;
+  border-radius: 2px;
+}
+
+.translate{
+  z-index: 200;
+}
+
+.gallerytiu video{
+  z-index: 50;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: -100px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
+.gallerytiu video:hover{
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.lightbox video{
+  margin: auto;
+  display: block;
+  width: auto;
+  max-height: 100%;
+}
+
+
+section.quote{
+  background:url('Tiupupus.png') no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  padding: 100px;
+}
+section.quote .layar-dalam p{
+  display: inline;
+  background: url('logo\ quote.png') no-repeat;
+  padding: 40px;
+  background-size: 10%;
+  padding-top: 7%;
+}
+.tim img{
+  width: 70%;
+  box-shadow: 0px -10px 30px #ccc;
+  border-radius: 5px;
+}
+.blog .area{
+  width: 47%;
+  box-shadow: 0px -1px 30px #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.blog div.area div{
+  width: 50%;
+}
+.blog .area .gambar{
+  border-radius: 5px 0px 0px 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.blog .area .text article{
+  padding: 40px;
+}
+.blog .area .text article h4{
+  margin: 0px;
+}
+.blog .area .text article a{
+  color: #333;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+.blog .area .text article a:hover{
+  color: #ccc;
+}
+
+footer{
+  padding: 50px 0px 50px 0px;
+  background-color: #343a40;
+  color: #fff;
+}
+/*
+footer .layar-dalam{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .layar-dalam div{
+  width: 20%;
+}
+footer .layar-dalam h5 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+  footer a{
+  text-decoration: none;
+  color: #fff;
+ }
+ footer  img{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+ }
+ footer  a .text{
+  position: relative;
+  top: -10px;
+ }
+
+ footer .kontak{
+  color: rgb(255, 25, 25);
+ }
+.sitemap a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.sitemap a:hover{
+  font-size: 16px;
+}
+.sitemap a:active{
+  color: rgb(213, 213, 213);
+}
+.sitemap ul{
+  max-height: 100px;
+  overflow-x: hidden;
+  width: 80px;
+  position: relative;
+  right: 20px;
+}
+
+*/
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.col{
+  flex: 1;
+  text-align: left;
+}
+.col p{
+  padding-right: 20px;
+}
+.ikontext{
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+.ikon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+footer .kontak{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+ }
+footer h5{
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer  img{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+ }
+ footer  a .text{
+  position: relative;
+  top: -10px;
+ }
+ footer a .text:hover{
+  text-decoration: underline;
+ }
+ footer a{
+  text-decoration: none;
+  color: #fff;
+ }
+ .sitemap ul{
+  max-height: 100px;
+  overflow-x: hidden;
+  width: 80px;
+  position: relative;
+  right: 20px;
+}
+.sitemap a:hover{
+  font-size: 16px;
+}
+.sitemap a:active{
+  color: rgb(213, 213, 213);
+}
+footer .layar-dalam .copyright{
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #666;
+  text-align: center;
+}
+
+ @media screen and (max-width: 991.98px) {
+   .layar-dalam{
+   width: 90%;
+   }
+   nav .menu ul{
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+   }
+   nav .menu ul li{
+      width: 100%;
+      border-bottom: 1px solid #ebebeb;
+      background-color: #ffffff;
+      line-height: 50px;
+   }
+   nav .menu ul li a{
+      color: black;
+   }
+   .tombol-menu{
+      display: flex;
+   }
+   .blog .area{
+    display: block;
+   }
+   .blog div.area div{
+    width: 100%;
+   }
+   .blog .area .gambar{
+    border-radius: 5px 5px 0px 0px;
+    height: 200px;
+   }
+   .support h3{
+    position: relative;
+   
+   }
+   .support{
+    display: block;
+   }
+   .support div{
+    width: 100%;
+    padding-bottom: 30px;
+   }
+   
+  section.quote .layar-dalam p{
+    display: inline;
+    background: url('logo\ quote.png') no-repeat;
+    padding: 40px;
+    background-size: 7%;
+    padding-top: 17%;
+    padding-left: 35px;
+    
+  }
+  
+  /*
+  footer .layar-dalam p{
+    padding: 3px;
+    min-height: 100px;
+    line-height: 1.5;
+    
+  }
+  footer .layar-dalam p.kontak{
+   font-size: 13px; 
+  }
+ footer .layar-dalam h5{
+  font-size: 16px;
+ }
+ footer .layar-dalam a img{
+  margin-left: 20px;
+ }
+ */
+ footer{
+  padding: 20px;
+  padding-left: 10px;
+ }
+ .row{
+  display: block;
+  justify-content: space-between;
+  
+ }
+ .col {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+ }
+ .sitemap{
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+  padding-top: 30px;
+ }
+ .col a{
+ position: relative;
+ top: -20px;
+ }
+ .col p{
+  position: relative;
+  top: -20px;
+ }
+ .ikontext{
+  position: relative;
+  top: -16px;
+
+ }
+ .gallerytiu{
+  position: relative;
+ }
+
+ .gallerytiu img{
+  z-index: 80;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  object-fit: cover;
+  text-align: center;
+}
+
+.gallerytiu video {
+  z-index: 80;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  object-fit: cover;
+  text-align: center;
+}
+
+
+.lightbox{
+  display: none;
+  position: fixed;
+  z-index: 150;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.lightbox img{
+  width: 95%;
+  height: auto;
+  
+}
+.close{
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+
+   
+}
+
+ 

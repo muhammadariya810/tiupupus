@@ -1,0 +1,333 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+  color: #ffffff;
+}  
+.tempatlogo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  background-color: #ffffff;
+  padding: 5px;
+  right: 0px;
+}
+.logo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.logo img{
+  width: 120px;
+  height: auto;
+}
+
+.tombolhome{
+  background-color: #e5e5e5;
+  height: 30px;
+  line-height: 30px;
+  color: inherit;
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  float: right;
+  
+}
+
+
+.background{
+    position: relative;
+    /*margin-top: -10%;*/
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+.background img{
+    position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   z-index: -2;
+}
+.background .overlay{
+    position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgb(18, 40, 43);
+   opacity: 60%;
+   z-index: -1;
+   
+}
+.form-box .box{
+    color: antiquewhite;
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    margin-top: -41%;
+    margin-left: 37%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(50, 115, 126, 0.5);
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+.keterangan h2{
+    font-size: 20px;
+    margin-top: -25px;
+}
+.box h2::after{
+    content: "";
+    border-bottom: 1px solid #ffffff;
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    
+}
+.keterangan label{
+    display: block;
+    margin-bottom: 5px;
+}
+.keterangan input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.tombol{
+  background-color: #18b392;
+   height: 40px;
+   line-height: 42px;
+   color: #ffffff;
+   text-decoration: none;
+   display: inline-block;
+   padding: 0px 20px 0px 20px;
+   font-size: 15px;
+   border-radius: 5px;
+   margin-top: 2%;
+   border: none;
+}
+.tombol:hover{
+  background-color: rgb(75, 201, 159);
+}
+.tombol:active{
+  
+   border: 1px solid #ffffff;
+}
+
+footer{
+    padding: 50px 0px 50px 0px;
+    background-color: #343a40;
+    color: #fff;
+    position: relative;
+   
+  }
+  /*
+  footer .layar-dalam{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .layar-dalam div{
+    width: 20%;
+  }
+  footer .layar-dalam h5 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  footer .layar-dalam .copyright{
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    text-align: center;
+  }
+  footer .layar-dalam a{
+    text-decoration: none;
+    color: #fff;
+   }
+   footer .layar-dalam img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+   }
+   footer .layar-dalam a .text{
+    position: relative;
+    top: -10px;
+   }
+  
+   footer .layar-dalam .kontak{
+    color: rgb(255, 25, 25);
+   }
+    */
+
+
+    .container{
+      max-width: 1100px;
+      margin: 0 auto;
+      
+    }
+    .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .col{
+      flex: 1;
+      text-align: left;
+    }
+    .col p{
+      padding-right: 20px;
+    }
+    .ikontext{
+      display: flex;
+      align-items: center;
+      padding: 4px;
+    }
+    .ikon{
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    footer .kontak{
+      color: rgb(255, 25, 25);
+      font-weight: bold;
+     }
+     
+    footer h5{
+      margin-top: 0px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    footer  img{
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+     }
+     footer  a .text{
+      position: relative;
+      top: -10px;
+     }
+     footer a .text:hover{
+      text-decoration: underline;
+     }
+     footer a{
+      text-decoration: none;
+      color: #fff;
+     }
+     footer .layar-dalam .copyright{
+      width: 100%;
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid #666;
+      text-align: center;
+    }
+
+  .sitemap a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .sitemap a:hover{
+    font-size: 16px;
+  }
+  .sitemap a:active{
+    color: rgb(213, 213, 213);
+  }
+  .sitemap ul{
+    max-height: 100px;
+    overflow-x: hidden;
+    width: 80px;
+    position: relative;
+    right: 20px;
+  }
+  @media screen and (max-width: 991.98px) {
+    .layar-dalam{
+    width: 90%;
+    }
+    .form-box .box{
+        width: 250px;
+        height: 450px;
+        margin-top: -115%;
+        left: -95px;
+        padding: 30px;
+    }
+    footer .layar-dalam p.kontak{
+      font-size: 10px;
+       
+     }
+     .keterangan h2{
+      font-size: 18px;
+     }
+     .box h2::after{
+      content: "";
+      border-bottom: 1px solid #ffffff;
+      width: 250px;
+      display: block;
+      margin-top: 10px;
+      
+      
+  }
+     
+     footer{
+      padding: 20px;
+      padding-left: 10px;
+     }
+     .row{
+      display: block;
+      justify-content: space-between;
+      
+     }
+     .col {
+      flex: 1;
+      text-align: left;
+      padding: 20px;
+     }
+     .sitemap{
+      flex: 1;
+      text-align: left;
+      padding: 20px;
+      padding-top: 30px;
+     }
+     .col a{
+     position: relative;
+     top: -20px;
+     }
+     .col p{
+      position: relative;
+      top: -20px;
+     }
+     .ikontext{
+      position: relative;
+      top: -16px;
+    
+     }
+    footer .layar-dalam a img{
+      margin-left: 20px;
+     } 
+    
+    
+ }
+  
