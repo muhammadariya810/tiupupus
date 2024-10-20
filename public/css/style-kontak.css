@@ -22,7 +22,7 @@ body {
     position: relative;
     /*margin-top: -10%;*/
     height: 100vh;
-    width: 100%;
+    width: 70%;
     overflow: hidden;
     z-index: 2;
 }
@@ -38,7 +38,7 @@ body {
     position: absolute;
    top: 0;
    left: 0;
-   height: 50%;
+   height: 70%;
    width: 100%;
    background-color: #12282b;
    opacity: 60%;
@@ -49,7 +49,6 @@ nav .keterangan{
     z-index: 5;
     color: #ffffff;
     position: absolute;
-    /*top: 50%;*/
     margin: 50px;
     top: 0px;
     padding: 120px;
@@ -73,57 +72,11 @@ nav .keterangan p{
     font-size: 16px;
     border-radius: 4px;
 }
-
-
 footer{
     padding: 50px 0px 50px 0px;
     background-color: #343a40;
     color: #fff;
   }
-  /*
-  footer .layar-dalam{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  footer .layar-dalam div{
-    width: 20%;
-  }
-  footer .layar-dalam h5 {
-    margin-top: 0px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  footer .layar-dalam .copyright{
-    width: 100%;
-    margin-top: 30px;
-    padding-top: 30px;
-    border-top: 1px solid #666;
-    text-align: center;
-  }
-  footer .layar-dalam a{
-    text-decoration: none;
-    color: #fff;
-   }
-   footer .layar-dalam img{
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-   }
-   footer .layar-dalam a .text{
-    position: relative;
-    top: -10px;
-   }
-  
-   footer .layar-dalam .kontak{
-    color: red;
-   }
-  .sitemap a{
-    text-decoration: none;
-    color: #ffffff;
-  }
-    */
     .container{
       max-width: 1100px;
       margin: 0 auto;
@@ -186,7 +139,6 @@ footer{
       border-top: 1px solid #666;
       text-align: center;
     }
-
   .sitemap a:hover{
     font-size: 16px;
   }
@@ -200,8 +152,6 @@ footer{
     position: relative;
     right: 20px;
   }
-  
-
   @media screen and (max-width: 768px) {
     .layar-dalam{
     width: 100%;
@@ -239,7 +189,6 @@ footer{
       top: -16px;
     
      }
-
      nav .keterangan{
       z-index: 5;
       color: #ffffff;
@@ -249,7 +198,6 @@ footer{
       top: 100px;
       padding: 0px;
      }
-
      nav .keterangan H1{
       font-size: 30px;
       margin: 0;
