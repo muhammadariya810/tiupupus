@@ -23,7 +23,6 @@ body {
 #google_element{
    position: absolute;
    float: right;
-   
    top: -185px;
    right: 20px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -497,6 +496,10 @@ footer .layar-dalam .copyright{
  @media screen and (max-width: 991.98px) {
    .layar-dalam{
    width: 90%;
+   }
+   header img{
+    width: 200%;
+
    }
    nav .menu ul{
       display: none;
