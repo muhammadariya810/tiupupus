@@ -215,7 +215,8 @@ footer .layar-dalam .copyright{
     position: absolute;
     width: 200%;
     height: 200%;
-    left: -80px;
+    left: -100px;
+    top: 100px;
     object-fit: cover;
     
  }
@@ -224,7 +225,7 @@ footer .layar-dalam .copyright{
   top: 55%;
  }
  .sosmed a{
-  top: 370px;
+  top: 400px;
   
  }
   footer{
