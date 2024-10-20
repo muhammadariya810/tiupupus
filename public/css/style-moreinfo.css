@@ -211,6 +211,14 @@ footer .layar-dalam .copyright{
   .layar-dalam{
   width: 90%;
   }
+  .background img{
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    object-fit: cover;
+    
+ }
+
  .background .intro{
   top: 55%;
  }
@@ -251,7 +259,8 @@ footer .layar-dalam .copyright{
     top: -16px;
    }
    .keterangan iframe{
-    width: 379px;
+    width: 375px;
     height: 225px;
    }
+
 }
