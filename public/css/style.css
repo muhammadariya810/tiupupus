@@ -500,7 +500,8 @@ footer .layar-dalam .copyright{
    }
    header img{
     position: absolute;
-    right: 50px;
+    left: 50px;
+    
    }
    nav .menu ul{
       display: none;
