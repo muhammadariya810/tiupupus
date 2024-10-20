@@ -498,10 +498,6 @@ footer .layar-dalam .copyright{
    width: 90%;
    
    }
-   header img{
-    position: absolute;
-    object-fit: cover;
-   }
    nav .menu ul{
       display: none;
       margin-top: 60px;
