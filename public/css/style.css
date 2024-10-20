@@ -498,6 +498,19 @@ footer .layar-dalam .copyright{
    .layar-dalam{
    width: 90%;
    }
+
+   body {
+    margin: 0px;
+    padding: 0px;
+}
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}  
+.layar-penuh{
+    width: 100%; 
+}
+
    nav .menu ul{
       display: none;
       margin-top: 60px;
