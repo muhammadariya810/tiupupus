@@ -494,9 +494,9 @@ footer .layar-dalam .copyright{
   text-align: center;
 }
 
- @media screen and (max-width: 991.98px) {
+ @media screen and (max-width: 768px) {
    .layar-dalam{
-   width: 100%;
+   width: 90%;
    }
    nav .menu ul{
       display: none;
