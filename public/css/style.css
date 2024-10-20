@@ -499,12 +499,6 @@ footer .layar-dalam .copyright{
    width: 90%;
    
    }
-   header img{
-    width: 200%;
-    height: 200%;
-    object-fit: cover;
-    left: -50px;
-   }
    nav .menu ul{
       display: none;
       margin-top: 60px;
