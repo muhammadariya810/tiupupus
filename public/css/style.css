@@ -496,9 +496,12 @@ footer .layar-dalam .copyright{
 
  @media screen and (max-width: 768px) {
    .layar-dalam{
-   width: 50%;
-   
+   width: 90%;
    }
+   header .overlay{
+    width: 90%;
+    
+  }
    nav .menu ul{
       display: none;
       margin-top: 60px;
