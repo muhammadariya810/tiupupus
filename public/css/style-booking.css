@@ -267,6 +267,13 @@ footer{
     .layar-dalam{
     width: 90%;
     }
+    .background img{
+      position: absolute;
+      width: 100%;
+     object-fit: cover;
+    
+    
+  }
     .form-box .box{
         width: 250px;
         height: 450px;
