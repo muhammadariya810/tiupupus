@@ -49,6 +49,7 @@ nav{
  nav .logo img{
     vertical-align: middle;
     width: 120px;
+    z-index: 400;
  }
  nav .menu{
     float: right;
