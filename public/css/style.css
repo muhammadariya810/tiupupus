@@ -371,60 +371,9 @@ footer{
   background-color: #343a40;
   color: #fff;
 }
-/*
-footer .layar-dalam{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-footer .layar-dalam div{
-  width: 20%;
-}
-footer .layar-dalam h5 {
-  margin-top: 0px;
-  font-size: 20px;
-  font-weight: bold;
-}
-  footer a{
-  text-decoration: none;
-  color: #fff;
- }
- footer  img{
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
- }
- footer  a .text{
-  position: relative;
-  top: -10px;
- }
-
- footer .kontak{
-  color: rgb(255, 25, 25);
- }
-.sitemap a{
-  text-decoration: none;
-  color: #ffffff;
-}
-.sitemap a:hover{
-  font-size: 16px;
-}
-.sitemap a:active{
-  color: rgb(213, 213, 213);
-}
-.sitemap ul{
-  max-height: 100px;
-  overflow-x: hidden;
-  width: 80px;
-  position: relative;
-  right: 20px;
-}
-
-*/
 .container{
   max-width: 1100px;
   margin: 0 auto;
-  
 }
 .row{
   display: flex;
