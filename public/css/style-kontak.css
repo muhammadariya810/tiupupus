@@ -38,9 +38,9 @@ body {
     position: absolute;
    top: 0;
    left: 0;
-   height: 100%;
+   height: 50%;
    width: 100%;
-   background-color: rgb(18, 40, 43);
+   background-color: #12282b;
    opacity: 60%;
    z-index: -1;
    
@@ -204,7 +204,7 @@ footer{
 
   @media screen and (max-width: 768px) {
     .layar-dalam{
-    width: 90%;
+    width: 100%;
     }
      footer{
       padding: 20px;
