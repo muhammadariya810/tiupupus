@@ -226,6 +226,7 @@ nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .gallerytiu img{
   z-index: 50;
