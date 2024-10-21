@@ -319,12 +319,12 @@ section.quote{
   color: #fff;
   font-size: 20px;
   font-style: italic;
-  padding: 100px;
+  padding: 70px;
 }
 section.quote .layar-dalam p{
   display: inline;
   background: url('../icon/logo\ quote.png') no-repeat;
-  padding: 30px;
+  padding: 40px;
   background-size: 10%;
   padding-top: 7%;
 }
