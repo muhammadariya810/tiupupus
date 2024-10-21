@@ -211,16 +211,9 @@ footer .layar-dalam .copyright{
   .layar-dalam{
   width: 90%;
   }
-  .background img{
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    left: -100px;
-    
-    
-    
- }
-
+  .background{
+    height: 60vh;
+}
  .background .intro{
   top: 55%;
  }
