@@ -493,7 +493,9 @@ footer .layar-dalam .copyright{
     padding-bottom: 30px;
    }
    
-  section.quote .layar-dalam p{
+  section.quote .layar-dalam p{   
+    padding-top: 7%;
+    
     
   }
  footer{
