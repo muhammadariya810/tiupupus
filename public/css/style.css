@@ -229,7 +229,9 @@ nav{
   align-items: center;
 }
 .gallery-foto{
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .gallerytiu img{
   z-index: 50;
@@ -289,7 +291,9 @@ nav{
   z-index: 200;
 }
 .gallery-video{
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .gallerytiu video{
   z-index: 50;
