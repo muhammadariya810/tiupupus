@@ -22,12 +22,10 @@ body {
 }
 #google_element{
    position: absolute;
+   z-index: 500;
+   top: -170px;
+   right: 10px;
    float: right;
-   top: -185px;
-   right: 20px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   
-   
 }
 nav{
     z-index: 100;
@@ -459,9 +457,11 @@ footer .layar-dalam .copyright{
    width: 90%;
    }
    header{
-    
     height: 60vh;
  }
+ #google_element{
+  top: -55px;
+}
    nav .menu ul{
       display: none;
       margin-top: 60px;
