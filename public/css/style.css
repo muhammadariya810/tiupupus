@@ -577,9 +577,9 @@ footer .layar-dalam .copyright{
   background-color: rgba(0, 0, 0, 0.9);
 }
 .lightbox img{
-  width: 100px;
+  width: 95%;
   height: auto;
-  cursor: pointer;
+  
 }
 .close{
   color: white;
